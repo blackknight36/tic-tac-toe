@@ -13,7 +13,7 @@ bool check_winner_diag();
 
 void human_move();
 
-void computer_move() ;
+void computer_move();
 
 void zero_board();
 

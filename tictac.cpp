@@ -1,6 +1,6 @@
-#include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
+#include <stdlib.h>
 #include <string>
 
 #include "tictac.h"
@@ -25,15 +25,7 @@ int get_board_size() {
 void draw_board() {
     system("clear");
 
-    //printf("\t");
-    
     for (int i = 0; i < size; i++) {
-        //printf("%d\t", i);
-    }
-    std::cout << std::endl;
-    
-    for (int i = 0; i < size; i++) {
-        //printf("%d\t", i);
         for (int j = 0; j < size; j++) {
             
             switch (board[i][j]) {
@@ -186,10 +178,6 @@ void human_move() {
 void computer_move() {
     int row, col;
 
-    /* Seed the random-number generator with current time so that the numbers will be different every time we run. */
-    std::cout << time(0) << std::endl;
-    
-    
     row = rand() %size;
     col = rand() %size;
 

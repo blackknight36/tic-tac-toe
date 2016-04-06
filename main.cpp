@@ -3,6 +3,7 @@
 // 11/20/04
 
 #include <iostream>
+#include <stdlib.h>
 #include <time.h>
 
 #include "tictac.h"
